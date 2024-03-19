@@ -1,0 +1,264 @@
+{% extends 'admin/layout/admin.html' %}
+{% block content %}
+    <div class="row row-cols-xl-5 row-cols-md-2 row-cols-1">
+        <div class="col mt-4">
+            <a href="#!"
+               class="features feature-primary d-flex justify-content-between align-items-center rounded shadow p-3">
+                <div class="d-flex align-items-center">
+                    <div class="icon text-center rounded-pill">
+                        <i class="uil uil-usd-circle fs-4 mb-0"></i>
+                    </div>
+                    <div class="flex-1 ms-3">
+                        <h6 class="mb-0 text-muted">Số dư</h6>
+                        <p class="fs-5 text-dark fw-bold mb-0"><span class="counter-value"
+                                                                     data-target="48575">0</span>
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div><!--end col-->
+        <div class="col mt-4">
+            <a href="#!"
+               class="features feature-primary d-flex justify-content-between align-items-center rounded shadow p-3">
+                <div class="d-flex align-items-center">
+                    <div class="icon text-center rounded-pill">
+                        <i class="uil uil-usd-circle fs-4 mb-0"></i>
+                    </div>
+                    <div class="flex-1 ms-3">
+                        <h6 class="mb-0 text-muted">Số tiền đã đầu tư</h6>
+                        <p class="fs-5 text-dark fw-bold mb-0"><span class="counter-value"
+                                                                     data-target="48575">0</span>
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div><!--end col-->
+        <div class="col mt-4">
+            <a href="#!"
+               class="features feature-primary d-flex justify-content-between align-items-center rounded shadow p-3">
+                <div class="d-flex align-items-center">
+                    <div class="icon text-center rounded-pill">
+                        <i class="uil uil-usd-circle fs-4 mb-0"></i>
+                    </div>
+                    <div class="flex-1 ms-3">
+                        <h6 class="mb-0 text-muted">Lãi</h6>
+                        <p class="fs-5 text-dark fw-bold mb-0"><span class="counter-value"
+                                                                     data-target="48575">0</span>
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div><!--end col-->
+        <div class="col mt-4">
+            <a href="#!"
+               class="features feature-primary d-flex justify-content-between align-items-center rounded shadow p-3">
+                <div class="d-flex align-items-center">
+                    <div class="icon text-center rounded-pill">
+                        <i class="uil uil-usd-circle fs-4 mb-0"></i>
+                    </div>
+                    <div class="flex-1 ms-3">
+                        <h6 class="mb-0 text-muted">Hoa hồng</h6>
+                        <p class="fs-5 text-dark fw-bold mb-0"><span class="counter-value"
+                                                                     data-target="48575">0</span>
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div><!--end col-->
+        <div class="col mt-4">
+            <a href="#!"
+               class="features feature-primary d-flex justify-content-between align-items-center rounded shadow p-3">
+                <div class="d-flex align-items-center">
+                    <div class="icon text-center rounded-pill">
+                        <i class="uil uil-users-alt fs-4 mb-0"></i>
+                    </div>
+                    <div class="flex-1 ms-3">
+                        <h6 class="mb-0 text-muted">Số lượng thành viên</h6>
+                        <p class="fs-5 text-dark fw-bold mb-0"><span class="counter-value" data-target="9">1.5</span>
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div><!--end col-->
+    </div>
+    <div class="row">
+        <div class="col-xl-7 mt-4">
+            <div class="card border-0">
+                <div class="d-flex justify-content-between p-4 shadow rounded-top">
+                    <h6 class="fw-bold mb-0">Danh sách giao dịch</h6>
+                </div>
+                <div class="table-responsive shadow rounded-bottom" data-simplebar style="height: 545px;">
+                    <table class="table table-center bg-white mb-0">
+                        <thead>
+                        <tr>
+                            <th class="border-bottom p-3">Thời gian</th>
+                            <th class="border-bottom p-3" style="min-width: 220px;">Cặp tiền</th>
+                            <th class="text-center border-bottom p-3">Số lượng</th>
+                            <th class="text-center border-bottom p-3" style="min-width: 150px;">Lãi</th>
+                            <th class="text-center border-bottom p-3">Trạng thái</th>
+                            {#                            <th class="text-end border-bottom p-3" style="min-width: 100px;">Preview</th>#}
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <!-- Start -->
+                        <tr>
+                            <th class="p-3">#d01</th>
+                            <td class="p-3">
+                                <a href="#" class="text-primary">
+                                    <div class="d-flex align-items-center">
+                                        <img src="assets/images/client/01.jpg"
+                                             class="avatar avatar-ex-small rounded-circle shadow" alt="">
+                                        <span class="ms-2">Howard Tanner</span>
+                                    </div>
+                                </a>
+                            </td>
+                            <td class="text-center p-3">$253</td>
+                            <td class="text-center p-3">0.1%</td>
+                            <td class="text-center p-3">
+                                <div class="badge bg-soft-danger rounded px-3 py-1">
+                                    Chờ xử lí
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- End -->
+
+                        <!-- Start -->
+                        <tr>
+                            <th class="p-3">#d02</th>
+                            <td class="p-3">
+                                <a href="#" class="text-primary">
+                                    <div class="d-flex align-items-center">
+                                        <img src="assets/images/client/02.jpg"
+                                             class="avatar avatar-ex-small rounded-circle shadow" alt="">
+                                        <span class="ms-2">Wendy Filson</span>
+                                    </div>
+                                </a>
+                            </td>
+                            <td class="text-center p-3">$482</td>
+                            <td class="text-center p-3">0.1%</td>
+                            <td class="text-center p-3">
+                                <div class="badge bg-soft-success rounded px-3 py-1">
+                                    Trả lãi
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- End -->
+
+                        <!-- Start -->
+                        <tr>
+                            <th class="p-3">#d03</th>
+                            <td class="p-3">
+                                <a href="#" class="text-primary">
+                                    <div class="d-flex align-items-center">
+                                        <img src="assets/images/client/03.jpg"
+                                             class="avatar avatar-ex-small rounded-circle shadow" alt="">
+                                        <span class="ms-2">Faye Bridger</span>
+                                    </div>
+                                </a>
+                            </td>
+                            <td class="text-center p-3">$546</td>
+                            <td class="text-center p-3">0.1%</td>
+                            <td class="text-center p-3">
+                                <div class="badge bg-soft-danger rounded px-3 py-1">
+                                    Chờ xử lí
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- End -->
+
+                        <!-- Start -->
+                        <tr>
+                            <th class="p-3">#d04</th>
+                            <td class="p-3">
+                                <a href="#" class="text-primary">
+                                    <div class="d-flex align-items-center">
+                                        <img src="assets/images/client/04.jpg"
+                                             class="avatar avatar-ex-small rounded-circle shadow" alt="">
+                                        <span class="ms-2">Ronald Curtis</span>
+                                    </div>
+                                </a>
+                            </td>
+                            <td class="text-center p-3">$154</td>
+                            <td class="text-center p-3">0.1%</td>
+                            <td class="text-center p-3">
+                                <div class="badge bg-soft-danger rounded px-3 py-1">
+                                    Chờ xử lí
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- End -->
+
+                        <!-- Start -->
+                        <tr>
+                            <th class="p-3">#d05</th>
+                            <td class="p-3">
+                                <a href="#" class="text-primary">
+                                    <div class="d-flex align-items-center">
+                                        <img src="assets/images/client/05.jpg"
+                                             class="avatar avatar-ex-small rounded-circle shadow" alt="">
+                                        <span class="ms-2">Melissa Hibner</span>
+                                    </div>
+                                </a>
+                            </td>
+                            <td class="text-center p-3">$458</td>
+                            <td class="text-center p-3">0.1%</td>
+                            <td class="text-center p-3">
+                                <div class="badge bg-soft-success rounded px-3 py-1">
+                                    Trả lãi
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- End -->
+
+                        <!-- Start -->
+                        <tr>
+                            <th class="p-3">#d06</th>
+                            <td class="p-3">
+                                <a href="#" class="text-primary">
+                                    <div class="d-flex align-items-center">
+                                        <img src="assets/images/client/06.jpg"
+                                             class="avatar avatar-ex-small rounded-circle shadow" alt="">
+                                        <span class="ms-2">Randall Case</span>
+                                    </div>
+                                </a>
+                            </td>
+                            <td class="text-center p-3">$548</td>
+                            <td class="text-center p-3">0.1%</td>
+                            <td class="text-center p-3">
+                                <div class="badge bg-soft-success rounded px-3 py-1">
+                                    Trả lãi
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- End -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div><!--end col-->
+        <div class="col-xl-5 mt-4">
+            <div class="card border-0 rounded shadow">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <label class="form-label">Đầu tư <span class="text-danger">*</span></label>
+                                <div class="form-icon position-relative">
+                                    <i data-feather="book" class="fea icon-sm icons"></i>
+                                    <input type="number" name="invest" id="invest" class="form-control ps-5"
+                                           placeholder="Nhập số tiền đầu tư :">
+                                </div>
+                            </div>
+                        </div><!--end col-->
+                    </div><!--end row-->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <input type="submit" id="submit" name="send" class="btn btn-primary" value="Đầu tư">
+                        </div><!--end col-->
+                    </div><!--end row-->
+                </div>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}

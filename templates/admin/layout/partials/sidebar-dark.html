@@ -1,0 +1,38 @@
+{% load static %}
+<!-- sidebar-wrapper -->
+<nav id="sidebar" class="sidebar-wrapper sidebar-dark">
+    <div class="sidebar-content" data-simplebar style="height: calc(100% - 60px);">
+        <div class="sidebar-brand">
+            <a href="{% url 'index' %}">
+                <img src="{% static 'admin/assets/images/logo-dark.png' %}" height="24" class="logo-light-mode" alt="">
+                <img src="{% static 'assets/images/logo-light.png' %}" height="24" class="logo-dark-mode" alt="">
+                <span class="sidebar-colored">
+                    <img src="{% static 'assets/images/logo-light.png' %}" height="24" alt="">
+                </span>
+            </a>
+        </div>
+
+        <ul class="sidebar-menu">
+            <li class="sidebar-dropdown">
+                <a href="{% url 'index' %}"><i class="bi bi-bar-chart me-2"></i>Trang chủ</a>
+            </li>
+            <li class="sidebar-dropdown">
+                <a href="#"><i class="bi bi-card-heading me-2"></i>Thành viên</a>
+            </li>
+            <li class="sidebar-dropdown">
+                <a href="{% url 'recharge' %}"><i class="bi bi-building-up me-2"></i>Nạp tiền </a>
+            </li>
+            <li class="sidebar-dropdown">
+                <a href="{% url 'account' %}"><i class="bi bi-window-fullscreen me-2"></i>Tài khoản</a>
+                <div class="sidebar-submenu">
+                    <ul>
+                        <li><a href="blog.html">Blogs</a></li>
+                        <li><a href="blog-detail.html">Blog Detail</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <!-- sidebar-menu  -->
+    </div>
+</nav>
+<!-- sidebar-wrapper  -->
