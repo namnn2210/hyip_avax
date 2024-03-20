@@ -11,7 +11,7 @@
         </nav>
     </div>
     <div class="row">
-        <div class="col-lg-6 mt-4">
+        <div class="col-lg-12 col-md-12 mt-4">
             <div class="card border-0 rounded shadow">
                 <div class="card-body">
                     <div class="row">
@@ -21,31 +21,168 @@
                         <div class="col-12">
                             <div class="mb-3 mt-4">
                                 <div class="form-icon position-relative">
-                                    <input type="password" class="form-control" placeholder="Nhập số USDT cần nạp"
+                                    <input type="password" class="form-control" placeholder="Nhập số USDT cần rút"
+                                           required="">
+                                </div>
+                            </div>
+                            <div class="mb-3 mt-4">
+                                <div class="form-icon position-relative">
+                                    <input type="password" class="form-control" placeholder="Nhập ví USDT (TRC20) của bạn"
                                            required="">
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-12 mt-2 mb-0 text-center">
-                            <button class="btn btn-primary">Nạp</button>
+                            <button class="btn btn-primary">Đặt lệnh rút</button>
                         </div><!--end col-->
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-lg-6 mt-4">
+        <div class="col-lg-12 col-md-12 mt-4">
             <div class="card border-0 rounded shadow">
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-12">
-                            <p>Vui lòng nhập đúng số tiền hệ thống yêu cầu để giao dịch được xử lý tự động.</p>
-                            <p>Please enter the correct amount required by the system for the transaction to be
-                                processed automatically.</p>
-                        </div>
-                        <div class="col-12">
-                            <img alt="" src="https://fpayment.co/assets/img/hd-crypto.png" style="width:100%">
-                        </div>
-                    </div>
+                <div class="d-flex justify-content-between p-4 shadow rounded-top">
+                    <h6 class="fw-bold mb-0">Lịch sử rút tiền</h6>
+                </div>
+                <div class="table-responsive shadow rounded-bottom" data-simplebar style="height: 545px;">
+                    <table class="table table-center bg-white mb-0">
+                        <thead>
+                        <tr>
+                            <th class="border-bottom p-3">Thời gian</th>
+                            <th class="border-bottom p-3" style="min-width: 220px;">Địa chỉ ví</th>
+                            <th class="text-center border-bottom p-3">Số lượng</th>
+                            <th class="text-center border-bottom p-3">Trạng thái</th>
+                            {#                            <th class="text-end border-bottom p-3" style="min-width: 100px;">Preview</th>#}
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <!-- Start -->
+                        <tr>
+                            <th class="p-3">#d01</th>
+                            <td class="p-3">
+                                <a href="#" class="text-primary">
+                                    <div class="d-flex align-items-center">
+                                        <img src="assets/images/client/01.jpg"
+                                             class="avatar avatar-ex-small rounded-circle shadow" alt="">
+                                        <span class="ms-2">Howard Tanner</span>
+                                    </div>
+                                </a>
+                            </td>
+                            <td class="text-center p-3">$253</td>
+                            <td class="text-center p-3">
+                                <div class="badge bg-soft-danger rounded px-3 py-1">
+                                    Chờ xử lí
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- End -->
+
+                        <!-- Start -->
+                        <tr>
+                            <th class="p-3">#d02</th>
+                            <td class="p-3">
+                                <a href="#" class="text-primary">
+                                    <div class="d-flex align-items-center">
+                                        <img src="assets/images/client/02.jpg"
+                                             class="avatar avatar-ex-small rounded-circle shadow" alt="">
+                                        <span class="ms-2">Wendy Filson</span>
+                                    </div>
+                                </a>
+                            </td>
+                            <td class="text-center p-3">$482</td>
+                            <td class="text-center p-3">
+                                <div class="badge bg-soft-success rounded px-3 py-1">
+                                    Trả lãi
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- End -->
+
+                        <!-- Start -->
+                        <tr>
+                            <th class="p-3">#d03</th>
+                            <td class="p-3">
+                                <a href="#" class="text-primary">
+                                    <div class="d-flex align-items-center">
+                                        <img src="assets/images/client/03.jpg"
+                                             class="avatar avatar-ex-small rounded-circle shadow" alt="">
+                                        <span class="ms-2">Faye Bridger</span>
+                                    </div>
+                                </a>
+                            </td>
+                            <td class="text-center p-3">$546</td>
+                            <td class="text-center p-3">
+                                <div class="badge bg-soft-danger rounded px-3 py-1">
+                                    Chờ xử lí
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- End -->
+
+                        <!-- Start -->
+                        <tr>
+                            <th class="p-3">#d04</th>
+                            <td class="p-3">
+                                <a href="#" class="text-primary">
+                                    <div class="d-flex align-items-center">
+                                        <img src="assets/images/client/04.jpg"
+                                             class="avatar avatar-ex-small rounded-circle shadow" alt="">
+                                        <span class="ms-2">Ronald Curtis</span>
+                                    </div>
+                                </a>
+                            </td>
+                            <td class="text-center p-3">$154</td>
+                            <td class="text-center p-3">
+                                <div class="badge bg-soft-danger rounded px-3 py-1">
+                                    Chờ xử lí
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- End -->
+
+                        <!-- Start -->
+                        <tr>
+                            <th class="p-3">#d05</th>
+                            <td class="p-3">
+                                <a href="#" class="text-primary">
+                                    <div class="d-flex align-items-center">
+                                        <img src="assets/images/client/05.jpg"
+                                             class="avatar avatar-ex-small rounded-circle shadow" alt="">
+                                        <span class="ms-2">Melissa Hibner</span>
+                                    </div>
+                                </a>
+                            </td>
+                            <td class="text-center p-3">$458</td>
+                            <td class="text-center p-3">
+                                <div class="badge bg-soft-success rounded px-3 py-1">
+                                    Trả lãi
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- End -->
+
+                        <!-- Start -->
+                        <tr>
+                            <th class="p-3">#d06</th>
+                            <td class="p-3">
+                                <a href="#" class="text-primary">
+                                    <div class="d-flex align-items-center">
+                                        <img src="assets/images/client/06.jpg"
+                                             class="avatar avatar-ex-small rounded-circle shadow" alt="">
+                                        <span class="ms-2">Randall Case</span>
+                                    </div>
+                                </a>
+                            </td>
+                            <td class="text-center p-3">$548</td>
+                            <td class="text-center p-3">
+                                <div class="badge bg-soft-success rounded px-3 py-1">
+                                    Trả lãi
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- End -->
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>

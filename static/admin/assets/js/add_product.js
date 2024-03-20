@@ -30,13 +30,13 @@ function populateList(categories, childrenClass) {
   // Clear existing content in the div
   div.innerHTML = "";
 
-  // Loop through each category and add it to the list
+  // Loop through each trade and add it to the list
   categories.forEach((category) => {
     console.log(category);
     // Create a new 'li' element
     const li = document.createElement("li");
 
-    // Add category name
+    // Add trade name
     const spanName = document.createElement("span");
     spanName.textContent = category.fields.display_category_name;
     spanName.setAttribute("id", `${category.pk}`);
@@ -47,11 +47,11 @@ function populateList(categories, childrenClass) {
     );
     li.appendChild(spanName);
 
-    // Check if the category has children and add an indicator
+    // Check if the trade has children and add an indicator
     if (category.fields.has_children) {
       const spanArrow = document.createElement("span");
       spanArrow.innerHTML = ' &rsaquo; ';
-      spanArrow.classList.add("category-item-right");
+      spanArrow.classList.add("trade-item-right");
       spanArrow.style = 'font-size: 20px';
       li.appendChild(spanArrow);
     }
@@ -114,7 +114,7 @@ function chooseCategory(ctx, categoryId, children, displayName) {
 
   let chosenCategories;
   lastLevelCategory = categoryId;
-  // console.log("Last level category: ", lastLevelCategory);
+  // console.log("Last level trade: ", lastLevelCategory);
   const csrftoken = getCookie("csrftoken");
   // if (children === "children-1") {
   //   chosenCategories = document.getElementById("chosenCategories");
@@ -157,7 +157,7 @@ function saveChoosenCategory() {
   for (let i = 0; i < listKeys.length; i++) {
     listItemSelectedStr += editItems[listKeys[i]].name + (i < listKeys.length - 1 ? ' > ' : '');
   }
-  document.querySelector("input[id=category]").value =listItemSelectedStr;
+  document.querySelector("input[id=trade]").value =listItemSelectedStr;
 
   fetch("/shopee/get_attributes/", {
     method: "POST",
