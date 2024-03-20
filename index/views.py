@@ -12,3 +12,7 @@ def account(request):
 
 def recharge(request):
     return render(request=request, template_name='admin/recharge.html')
+
+
+def withdraw(request):
+    return render(request=request, template_name='admin/withdraw.html')
