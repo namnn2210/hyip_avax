@@ -1,0 +1,52 @@
+{% extends 'admin/layout/admin.html' %}
+{% block content %}
+    <div class="d-md-flex justify-content-between align-items-center">
+        <h5 class="mb-0">Rút tiền</h5>
+
+        <nav aria-label="breadcrumb" class="d-inline-block mt-2 mt-sm-0">
+            <ul class="breadcrumb bg-transparent rounded mb-0 p-0">
+                <li class="breadcrumb-item text-capitalize"><a href="index.html">Landrick</a></li>
+                <li class="breadcrumb-item text-capitalize"><a href="{% url 'recharge' %}">Rút tiền</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 mt-4">
+            <div class="card border-0 rounded shadow">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <img width="200px" src="https://fpayment.co/assets/img/usdttrc20.png">
+                        </div>
+                        <div class="col-12">
+                            <div class="mb-3 mt-4">
+                                <div class="form-icon position-relative">
+                                    <input type="password" class="form-control" placeholder="Nhập số USDT cần nạp"
+                                           required="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 mt-2 mb-0 text-center">
+                            <button class="btn btn-primary">Nạp</button>
+                        </div><!--end col-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="col-lg-6 mt-4">
+            <div class="card border-0 rounded shadow">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12">
+                            <p>Vui lòng nhập đúng số tiền hệ thống yêu cầu để giao dịch được xử lý tự động.</p>
+                            <p>Please enter the correct amount required by the system for the transaction to be processed automatically.</p>
+                        </div>
+                        <div class="col-12">
+                            <img alt="" src="https://fpayment.co/assets/img/hd-crypto.png" style="width:100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

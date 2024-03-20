@@ -17,17 +17,28 @@
                 <a href="{% url 'index' %}"><i class="bi bi-bar-chart me-2"></i>Trang chủ</a>
             </li>
             <li class="sidebar-dropdown">
-                <a href="#"><i class="bi bi-card-heading me-2"></i>Thành viên</a>
-            </li>
-            <li class="sidebar-dropdown">
-                <a href="{% url 'recharge' %}"><i class="bi bi-building-up me-2"></i>Nạp tiền </a>
-            </li>
-            <li class="sidebar-dropdown">
-                <a href="{% url 'account' %}"><i class="bi bi-window-fullscreen me-2"></i>Tài khoản</a>
+                <a href="javascript:void(0)"><i class="bi bi-card-heading me-2"></i>Hoa hồng</a>
                 <div class="sidebar-submenu">
                     <ul>
-                        <li><a href="blog.html">Blogs</a></li>
-                        <li><a href="blog-detail.html">Blog Detail</a></li>
+                        <li><a href="{% url 'affiliate_overview' %}">Tổng quan</a></li>
+                        <li><a href="{% url 'affiliate_members' %}">Thành viên</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="sidebar-dropdown">
+                <a href="javascript:void(0)"><i class="bi bi-building-up me-2"></i>Nạp rút</a>
+                <div class="sidebar-submenu">
+                    <ul>
+                        <li><a href="{% url 'recharge' %}">Nạp tiền</a></li>
+                        <li><a href="blog-detail.html">Rút tiền</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="sidebar-dropdown">
+                <a href="javascript:void(0)"><i class="bi bi-window-fullscreen me-2"></i>Tài khoản</a>
+                <div class="sidebar-submenu">
+                    <ul>
+                        <li><a href="{% url 'account' %}">Cài đặt</a></li>
                     </ul>
                 </div>
             </li>
