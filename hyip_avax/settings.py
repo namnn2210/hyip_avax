@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'index',
     'affiliate',
-    'trade'
+    'trade',
+    'news'
 ]
 
 MIDDLEWARE = [
@@ -79,7 +80,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'avax',
         'USER': 'root',
-        'PASSWORD': 'ngocnam2210',
+        'PASSWORD': '',
         'HOST': '127.0.0.1',  # Change this if your MySQL server is on a different host
         'PORT': '3306',
     }
