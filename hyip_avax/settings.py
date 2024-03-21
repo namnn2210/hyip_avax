@@ -132,11 +132,13 @@ MEDIA_URL = '/media/'
 CORS_ALLOWED_ORIGINS = [
     'http://127.0.0.1:2210',
     "http://localhost:2210",
+    'https://business-demo.xyz'
 ]
 
 CSRF_TRUSTED_ORIGINS = [
     'http://127.0.0.1:2210',
     "http://localhost:2210",
+    'https://business-demo.xyz'
 ]
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
