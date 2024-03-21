@@ -79,7 +79,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'avax',
         'USER': 'root',
-        'PASSWORD': '',
+        'PASSWORD': 'ngocnam2210',
         'HOST': '127.0.0.1',  # Change this if your MySQL server is on a different host
         'PORT': '3306',
     }
